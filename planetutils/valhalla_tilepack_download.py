@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 import argparse
 
+from valhalla_tilepacks import *
+
 def main():
     parser = argparse.ArgumentParser()
     # TODO
