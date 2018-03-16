@@ -32,6 +32,7 @@ Python-based scripts and a Docker container to work with planet-scale geographic
 - maintain your own copy of the [OpenStreetMap](http://www.openstreetmap.org) planet (by applying incremental updates)
 - cut your copy of the OSM planet into named bounding boxes (a.k.a., mini Mapzen Metro Extracts)
 - download [Mapzen Terrain Tiles from AWS](https://aws.amazon.com/public-datasets/terrain/) for the planet or your bounding boxes
+- download [Valhalla Tilepacks from Interline](https://www.interline.io/valhalla/tilepacks/)
 
 PlanetUtils is packaged for use as a:
 
@@ -156,6 +157,22 @@ For complete help on command-line arguments:
 ```sh
 elevation_tile_download -h
 ```
+
+<a name="valhalla-tilepacks"></a>
+
+### valhalla_tilepack_download
+
+Download [Valhalla Tilepacks from Interline](https://www.interline.io/valhalla/tilepacks/) to power your own instances of the [Valhalla routing engine](https://www.interline.io/valhalla/).
+
+Initial set-up:
+
+1. Sign up for [Valhalla Tilepacks from Interline](https://www.interline.io/valhalla/tilepacks/).
+2. Place your key file at `~/.interline-planetutils/valhalla-tilepacks-key.json`
+
+Download planet-wide Tilepacks:
+
+TODO
+
 
 ### Bounding box CSV file format
 <a name="bounding-box"></a>

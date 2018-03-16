@@ -17,14 +17,15 @@ setup(name='interline-planetutils',
     author_email='ian@interline.io',
     license='MIT',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
-    install_requires=['boto3'],
+    install_requires=['boto3', 'google-cloud-storage'],
     tests_require=['nose'],
     test_suite = 'nose.collector',
     entry_points={
         'console_scripts': [
             'osm_planet_update=planetutils.osm_planet_update:main',
             'osm_planet_extract=planetutils.osm_planet_extract:main',
-            'elevation_tile_download=planetutils.elevation_tile_download:main'
+            'elevation_tile_download=planetutils.elevation_tile_download:main',
+            'valhalla_tilepack_download=planetutils.valhalla_tilepack_download:main'
         ],
     },
     classifiers=[
